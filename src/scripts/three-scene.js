@@ -1,6 +1,6 @@
 import * as THREE from 'three'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
+import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js'
@@ -8,8 +8,7 @@ import { SSAOPass } from 'three/examples/jsm/postprocessing/SSAOPass.js'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
 
-const MODEL_URL = 'https://cdn.jsdelivr.net/gh/RookieCube/XicunWebsite@main/models/town_hall/town_hall_draco.glb'
-const DECODER_URL = 'https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/libs/draco/'
+const MODEL_BASE = 'https://cdn.jsdelivr.net/gh/RookieCube/XicunWebsite@main/models/town_hall/'
 
 // MakeUp UltraFast "Shoka" day colors ─ extracted from color_utils.glsl
 // ZENITH_DAY_COLOR: vec3(0.10, 0.40, 0.95)  → 0x1a66f2  deep vibrant blue
@@ -205,23 +204,29 @@ function setupMouse() {
 
 async function loadModel() {
   try {
-    const dracoLoader = new DRACOLoader()
-    dracoLoader.setDecoderPath(DECODER_URL)
-    dracoLoader.setDecoderConfig({ type: 'js' })
+    const mtlLoader = new MTLLoader()
+    const mtl = await mtlLoader.loadAsync(MODEL_BASE + 'town_hall.mtl')
 
-    const gltfLoader = new GLTFLoader()
-    gltfLoader.setDRACOLoader(dracoLoader)
-    const gltf = await gltfLoader.loadAsync(MODEL_URL)
-
-    const obj = gltf.scene
-
-    // Load atlas texture (same approach as OBJ path)
+    // Load atlas texture separately so we can patch MTL materials
     const texLoader = new THREE.TextureLoader()
     const atlas = await texLoader.loadAsync('/XicunWebsite/atlas.png')
     atlas.generateMipmaps = true
     atlas.minFilter = THREE.NearestMipmapNearestFilter
     atlas.magFilter = THREE.NearestFilter
     atlas.colorSpace = THREE.SRGBColorSpace
+
+    // Patch all MTL materials to use our atlas and correct colorSpace
+    for (const name in mtl.materials) {
+      const m = mtl.materials[name]
+      if (m.map) {
+        m.map = atlas
+      }
+      m.colorSpace = THREE.SRGBColorSpace
+    }
+
+    const objLoader = new OBJLoader()
+    objLoader.setMaterials(mtl)
+    const obj = await objLoader.loadAsync(MODEL_BASE + 'town_hall.obj')
 
     obj.traverse(c => {
       if (!c.isMesh) return
