@@ -1,6 +1,6 @@
 import * as THREE from 'three'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js'
@@ -198,58 +198,31 @@ function setupMouse() {
 
 async function loadModel() {
   try {
-    const mtlLoader = new MTLLoader(); mtlLoader.setPath('/models/town_hall/')
-    const mats = await mtlLoader.loadAsync('town_hall.mtl'); mats.preload()
+    const dracoLoader = new DRACOLoader()
+    dracoLoader.setDecoderPath('/XicunWebsite/draco/')
 
-    const objLoader = new OBJLoader()
-    objLoader.setMaterials(mats); objLoader.setPath('/models/town_hall/')
-    const obj = await objLoader.loadAsync('town_hall.obj')
+    const gltfLoader = new GLTFLoader()
+    gltfLoader.setDRACOLoader(dracoLoader)
+    gltfLoader.setPath('/XicunWebsite/models/town_hall/')
+    const gltf = await gltfLoader.loadAsync('town_hall_draco.glb')
 
-    const allMats = new Set()
-    obj.traverse(c => { if (c.isMesh && c.material) for (const m of [c.material].flat()) allMats.add(m) })
-
-    let sharedMap = null
-    for (const mat of allMats) {
-      if (mat.map && !sharedMap) {
-        sharedMap = mat.map
-        sharedMap.minFilter = THREE.NearestMipmapNearestFilter
-        sharedMap.magFilter = THREE.NearestFilter
-        sharedMap.generateMipmaps = true
-        sharedMap.colorSpace = THREE.SRGBColorSpace
-        sharedMap.needsUpdate = true
-      }
-    }
-
+    const obj = gltf.scene
     obj.traverse(c => {
       if (!c.isMesh) return
-      c.castShadow = true; c.receiveShadow = true
-
-      const old = [c.material].flat()
-      const nu = old.map(m => {
-        const tr = (m.name || '').toLowerCase().includes('water') ||
-          (m.name || '').toLowerCase().includes('glass') ||
-          (m.name || '').toLowerCase().includes('pane') ||
-          (m.name || '').toLowerCase().includes('ice')
-        const sm = new THREE.MeshStandardMaterial({
-          map: sharedMap,
-          color: m.color ? m.color.clone() : 0xffffff,
-          roughness: 0.65,
-          metalness: 0.0,
-          alphaTest: tr ? 0 : 0.3,
-          transparent: tr,
-          opacity: tr ? Math.max(0.3, m.opacity || 0.6) : 1,
-          depthWrite: !tr,
-          side: THREE.FrontSide,
-          polygonOffset: true,
-          polygonOffsetFactor: -0.5,
-          polygonOffsetUnits: -0.5,
-        })
-        sm.name = m.name || ''
-        if (m.map && m.map !== sharedMap) m.map.dispose()
-        m.dispose()
-        return sm
-      })
-      c.material = nu.length === 1 ? nu[0] : nu
+      c.castShadow = true
+      c.receiveShadow = true
+      const m = c.material
+      if (m) {
+        m.roughness = 0.65
+        m.metalness = 0
+        m.alphaTest = m.transparent ? 0 : 0.3
+        if (m.map) {
+          m.map.minFilter = THREE.NearestMipmapNearestFilter
+          m.map.magFilter = THREE.NearestFilter
+          m.map.colorSpace = THREE.SRGBColorSpace
+          m.map.needsUpdate = true
+        }
+      }
     })
 
     modelGroup = new THREE.Group(); modelGroup.add(obj)
@@ -259,7 +232,6 @@ async function loadModel() {
     modelReady = true
     buildEntrancePath()
 
-    // Complete loader bar, then fade out
     const bar = document.getElementById('loader-fill')
     if (bar) bar.style.width = '100%'
     setTimeout(() => {

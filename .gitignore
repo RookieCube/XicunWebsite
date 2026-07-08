@@ -9,3 +9,4 @@ tsconfig.json
 README.md
 .astro/
 dist/
+_astro/draco_*
