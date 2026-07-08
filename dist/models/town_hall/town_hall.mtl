@@ -1,0 +1,2361 @@
+# MCBlock Materials
+
+newmtl polished_granite
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dirt
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl water
+Ka 0.2 0.2 0.2
+Kd 0.2471 0.4627 0.8941
+Ks 0.0 0.0 0.0
+d 0.45
+illum 1
+map_Kd atlas.png
+
+newmtl sand
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl diorite
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl granite
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl coal_ore
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl andesite
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl sea_lantern
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl bubble_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dead_bubble_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl seagrass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl tall_seagrass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dead_brain_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dead_horn_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gravel
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl iron_ore
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl horn_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cobblestone_wall
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl clay
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl quartz_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl smooth_quartz_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cyan_concrete
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl yellow_terracotta
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dark_oak_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone_bricks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cyan_terracotta
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dark_oak_planks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl ladder
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cobblestone
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone_brick_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone_brick_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_concrete
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl lantern
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl oak_wall_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_wall_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl composter
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl brain_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl lectern
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl tripwire
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl tube_coral_fan
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl torch
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl smooth_quartz_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone_pressure_plate
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_fence_gate
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_stained_glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl gray_concrete
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_planks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl redstone_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_leaves
+Ka 0.2 0.2 0.2
+Kd 0.4670 0.6710 0.1840
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl orange_concrete
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl prismarine
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl tube_coral_wall_fan
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl farmland
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl smooth_stone
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl powered_rail
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl rail
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl light_gray_concrete
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl light_gray_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potatoes
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl birch_planks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl pink_concrete
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone_button
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl birch_leaves
+Ka 0.2 0.2 0.2
+Kd 0.5020 0.6550 0.3330
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl fire_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl light_blue_banner_c_64a3cf
+Ka 0.2 0.2 0.2
+Kd 0.3922 0.6392 0.8118
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl light_blue_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl wall_torch
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl grass_block_c_91bd59
+Ka 0.2 0.2 0.2
+Kd 0.5690 0.7410 0.3490
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl grass_block_c_ffffff
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl emerald_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl polished_andesite
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl polished_andesite_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl smooth_quartz
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl iron_trapdoor
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stripped_spruce_log
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl deepslate
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl polished_diorite
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl polished_diorite_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl chest
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl birch_wall_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl frosted_ice
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.48
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl bookshelf
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl enchanting_table
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl beacon
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl mycelium
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl podzol
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dirt_path
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_planks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl short_grass
+Ka 0.2 0.2 0.2
+Kd 0.5690 0.7410 0.3490
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl coarse_dirt
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dandelion
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_log
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl sweet_berry_bush
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_planks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl wheat
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_fence
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_fence_gate
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl crimson_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_log
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl smooth_stone_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone_brick_wall
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_bed
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl poppy
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl brown_banner_c_7d4e2d
+Ka 0.2 0.2 0.2
+Kd 0.4902 0.3059 0.1765
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl brown_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cobblestone_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl fern
+Ka 0.2 0.2 0.2
+Kd 0.5690 0.7410 0.3490
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl granite_wall
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl anvil
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl crafting_table
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_trapdoor
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_log
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl lever
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl redstone_wire_c_4d0000
+Ka 0.2 0.2 0.2
+Kd 0.3000 0.0000 0.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl redstone_wire_c_ffffff
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_leaves
+Ka 0.2 0.2 0.2
+Kd 0.4670 0.6710 0.1840
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl jungle_leaves
+Ka 0.2 0.2 0.2
+Kd 0.4670 0.6710 0.1840
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl mossy_stone_bricks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl sea_pickle
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl tall_grass
+Ka 0.2 0.2 0.2
+Kd 0.5690 0.7410 0.3490
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_acacia_sapling
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_dark_oak_sapling
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_birch_sapling
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_jungle_sapling
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl barrel
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl scaffolding
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stripped_oak_log
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl campfire
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl tube_coral_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl beehive
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl bubble_coral_wall_fan
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl kelp_plant
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_fence
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stripped_oak_wood
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stripped_spruce_wood
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl jungle_door
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl pumpkin
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl repeater
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_button
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl sticky_piston
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl light_blue_wall_banner_c_64a3cf
+Ka 0.2 0.2 0.2
+Kd 0.3922 0.6392 0.8118
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl light_blue_wall_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_banner_c_474e54
+Ka 0.2 0.2 0.2
+Kd 0.2784 0.3059 0.3294
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_banner_c_5e8126
+Ka 0.2 0.2 0.2
+Kd 0.3686 0.5059 0.1490
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_banner_c_f9f9f9
+Ka 0.2 0.2 0.2
+Kd 0.9765 0.9765 0.9765
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl diorite_wall
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cobblestone_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_wool
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl light_gray_wool
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_oxeye_daisy
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl horn_coral
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl fire_coral_wall_fan
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl fire_coral
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl potted_dead_bush
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stripped_birch_log
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl jukebox
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_door
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_door
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl furnace
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl blast_furnace
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dark_prismarine_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl piston_head
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl mossy_cobblestone
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl quartz_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl peony
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_wall_banner_c_474e54
+Ka 0.2 0.2 0.2
+Kd 0.2784 0.3059 0.3294
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_wall_banner_c_5e8126
+Ka 0.2 0.2 0.2
+Kd 0.3686 0.5059 0.1490
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_wall_banner_c_f9f9f9
+Ka 0.2 0.2 0.2
+Kd 0.9765 0.9765 0.9765
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl gray_wall_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl quartz_pillar
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl bell
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl soul_sand
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl brewing_stand
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_lily_of_the_valley
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dead_bubble_coral
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl chiseled_stone_bricks
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl ender_chest
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_spruce_sapling
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl carrots
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl beetroots
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_pressure_plate
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl sugar_cane
+Ka 0.2 0.2 0.2
+Kd 0.5690 0.7410 0.3490
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl lily_of_the_valley
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl azure_bluet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_tulip
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl shulker_box
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_wall_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl andesite_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl lilac
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl rose_bush
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl spruce_leaves
+Ka 0.2 0.2 0.2
+Kd 0.3800 0.6000 0.3800
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cauldron
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oak_trapdoor
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dead_brain_coral_fan
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl flower_pot
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl smoker
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl water_cauldron_c_ffffff
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.45
+illum 1
+map_Kd atlas.png
+
+newmtl water_cauldron_c_3f76e4
+Ka 0.2 0.2 0.2
+Kd 0.2471 0.4627 0.8941
+Ks 0.0 0.0 0.0
+d 0.45
+illum 1
+map_Kd atlas.png
+
+newmtl end_rod
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cut_sandstone
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl grindstone
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl purple_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl purple_stained_glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl pink_stained_glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl white_wall_banner_c_f9f9f9
+Ka 0.2 0.2 0.2
+Kd 0.9765 0.9765 0.9765
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_wall_banner_c_2a8698
+Ka 0.2 0.2 0.2
+Kd 0.1647 0.5255 0.5961
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_wall_banner_c_9ea0a0
+Ka 0.2 0.2 0.2
+Kd 0.6196 0.6275 0.6275
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_wall_banner_c_474e54
+Ka 0.2 0.2 0.2
+Kd 0.2784 0.3059 0.3294
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_wall_banner_c_1d1d21
+Ka 0.2 0.2 0.2
+Kd 0.1137 0.1137 0.1294
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_wall_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl purple_bed
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl andesite_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl lime_bed
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl andesite_wall
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl tripwire_hook
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_azure_bluet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_allium
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_door
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_trapdoor
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl black_stained_glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl cake
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl skeleton_skull
+Ka 0.2 0.2 0.2
+Kd 0.8000 0.8000 0.7000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl birch_sign
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_blue_orchid
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl orange_stained_glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl potted_pink_tulip
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_red_tulip
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl birch_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl blue_orchid
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl oxeye_daisy
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stonecutter
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_cactus
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dark_oak_door
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl blue_stained_glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl light_blue_stained_glass_pane
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl cut_red_sandstone
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl kelp
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl player_wall_head
+Ka 0.2 0.2 0.2
+Kd 0.7000 0.6000 0.5000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl pink_bed
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl cartography_table
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl stone_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl blue_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl turtle_egg
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_dandelion
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_cornflower
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl orange_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_sandstone_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl pink_tulip
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl orange_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl dark_oak_trapdoor
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl orange_glazed_terracotta
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl dark_oak_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_bamboo
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_bed
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl yellow_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl smooth_sandstone_slab
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl iron_chain
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_red_mushroom
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl lime_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl light_blue_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl acacia_fence_gate
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl green_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl obsidian
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl blue_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl yellow_wool
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_warped_fungus
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl purple_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl creeper_head
+Ka 0.2 0.2 0.2
+Kd 0.7000 0.6000 0.5000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl smithing_table
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl magenta_stained_glass
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 0.38
+illum 1
+map_Kd atlas.png
+
+newmtl pink_carpet
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_wool
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_mushroom_block
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_wall_banner_c_b32c2d
+Ka 0.2 0.2 0.2
+Kd 0.7020 0.1725 0.1765
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl red_wall_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl potted_poppy
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl birch_stairs
+Ka 0.2 0.2 0.2
+Kd 1.0000 1.0000 1.0000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_banner_c_f9f9f9
+Ka 0.2 0.2 0.2
+Kd 0.9765 0.9765 0.9765
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
+
+newmtl white_banner_c_734d33
+Ka 0.2 0.2 0.2
+Kd 0.4500 0.3000 0.2000
+Ks 0.0 0.0 0.0
+d 1.00
+illum 1
+map_Kd atlas.png
