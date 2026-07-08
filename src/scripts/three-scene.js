@@ -193,8 +193,8 @@ function onResize() {
 }
 
 function setupMouse() {
-  renderer.domElement.addEventListener('pointerdown', e => { prevMouseX = e.clientX })
-  renderer.domElement.addEventListener('pointermove', e => {
+  window.addEventListener('pointerdown', e => { prevMouseX = e.clientX })
+  window.addEventListener('pointermove', e => {
     // Drag rotation
     if (e.buttons & 1) { camAngle -= (e.clientX - prevMouseX) * 0.004; prevMouseX = e.clientX }
     // Passive parallax follow
