@@ -7,6 +7,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { SSAOPass } from 'three/examples/jsm/postprocessing/SSAOPass.js'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
+import modelBuffer from './model-data.js'
 
 // MakeUp UltraFast "Shoka" day colors ─ extracted from color_utils.glsl
 // ZENITH_DAY_COLOR: vec3(0.10, 0.40, 0.95)  → 0x1a66f2  deep vibrant blue
@@ -208,8 +209,9 @@ async function loadModel() {
 
     const gltfLoader = new GLTFLoader()
     gltfLoader.setDRACOLoader(dracoLoader)
-    gltfLoader.setPath('/XicunWebsite/models/town_hall/')
-    const gltf = await gltfLoader.loadAsync('town_hall_draco.glb')
+    const gltf = await new Promise((rs, rj) =>
+      gltfLoader.parse(modelBuffer, '', rs, rj)
+    )
 
     const obj = gltf.scene
     obj.traverse(c => {

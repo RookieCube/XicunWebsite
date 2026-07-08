@@ -10,3 +10,4 @@ README.md
 .astro/
 dist/
 _astro/draco_*
+models/
