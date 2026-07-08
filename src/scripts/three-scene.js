@@ -203,7 +203,7 @@ function setupMouse() {
 async function loadModel() {
   try {
     const dracoLoader = new DRACOLoader()
-    dracoLoader.setDecoderPath('/XicunWebsite/draco/')
+    dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/')
 
     const gltfLoader = new GLTFLoader()
     gltfLoader.setDRACOLoader(dracoLoader)
