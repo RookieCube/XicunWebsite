@@ -215,34 +215,36 @@ async function loadModel() {
 
     const obj = gltf.scene
 
-    // Load atlas as regular Image, create proper Texture (not DataTexture)
+    // Load atlas texture (same approach as OBJ path)
     const texLoader = new THREE.TextureLoader()
-    const loadedTex = await texLoader.loadAsync('/XicunWebsite/atlas.png')
+    const atlas = await texLoader.loadAsync('/XicunWebsite/atlas.png')
+    atlas.generateMipmaps = true
+    atlas.minFilter = THREE.NearestMipmapNearestFilter
+    atlas.magFilter = THREE.NearestFilter
+    atlas.colorSpace = THREE.SRGBColorSpace
 
     obj.traverse(c => {
       if (!c.isMesh) return
       c.castShadow = true
       c.receiveShadow = true
-      const m = c.material
-      if (m) {
-        m.roughness = 0.65
-        m.metalness = 0
-        m.alphaTest = m.transparent ? 0 : 0.3
-        if (m.map) {
-          const t = new THREE.Texture(loadedTex.image)
-          t.offset.copy(m.map.offset)
-          t.repeat.copy(m.map.repeat)
-          t.wrapS = m.map.wrapS
-          t.wrapT = m.map.wrapT
-          t.rotation = m.map.rotation
-          t.generateMipmaps = true
-          t.minFilter = THREE.NearestMipmapNearestFilter
-          t.magFilter = THREE.NearestFilter
-          t.colorSpace = THREE.SRGBColorSpace
-          t.needsUpdate = true
-          m.map = t
-        }
-      }
+
+      const old = [c.material].flat()
+      const nu = old.map(m => {
+        const name = (m.name || '').toLowerCase()
+        const tr = name.includes('water') || name.includes('glass') || name.includes('pane') || name.includes('ice')
+        const sm = new THREE.MeshStandardMaterial({
+          map: atlas,
+          color: m.color ? m.color.clone() : 0xffffff,
+          roughness: 0.65,
+          metalness: 0,
+          alphaTest: tr ? 0 : 0.3,
+          transparent: tr,
+          opacity: tr ? Math.max(0.3, m.opacity || 0.6) : 1,
+          depthWrite: !tr,
+        })
+        return sm
+      })
+      c.material = nu.length === 1 ? nu[0] : nu
     })
 
     modelGroup = new THREE.Group(); modelGroup.add(obj)
