@@ -1,3 +1,11 @@
+src/
+scripts/
+public/
 node_modules/
+astro.config.mjs
+package.json
+package-lock.json
+tsconfig.json
+README.md
 .astro/
-.DS_Store
+dist/
