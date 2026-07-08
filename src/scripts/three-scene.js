@@ -46,7 +46,7 @@ export function init() {
   renderer.toneMapping = THREE.NoToneMapping
   renderer.toneMappingExposure = 0.05 // start dark
   renderer.shadowMap.enabled = true
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap
+  renderer.shadowMap.type = THREE.PCFShadowMap
   c.appendChild(renderer.domElement)
 
   // Letterbox bars — cover screen, then open over entrance duration
@@ -115,8 +115,12 @@ export function init() {
   sun.shadow.camera.right = sun.shadow.camera.top = 80
   scene.add(sun)
 
-  scene.add(new THREE.DirectionalLight(0x8899cc, 0.2).position.set(-10, 15, -20))
-  scene.add(new THREE.DirectionalLight(0x665544, 0.15).position.set(0, -5, 0))
+  const fill1 = new THREE.DirectionalLight(0x8899cc, 0.2)
+  fill1.position.set(-10, 15, -20)
+  scene.add(fill1)
+  const fill2 = new THREE.DirectionalLight(0x665544, 0.15)
+  fill2.position.set(0, -5, 0)
+  scene.add(fill2)
 
   loadModel()
 
