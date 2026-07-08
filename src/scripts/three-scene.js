@@ -215,13 +215,9 @@ async function loadModel() {
 
     const obj = gltf.scene
 
-    // Load atlas texture separately via TextureLoader (avoids DataTexture color issues)
+    // Load atlas as regular Image to replace ImageBitmap (fixes color space)
     const texLoader = new THREE.TextureLoader()
-    const atlas = await texLoader.loadAsync('/XicunWebsite/atlas.png')
-    atlas.generateMipmaps = true
-    atlas.minFilter = THREE.NearestMipmapNearestFilter
-    atlas.magFilter = THREE.NearestFilter
-    atlas.colorSpace = THREE.SRGBColorSpace
+    const loadedTex = await texLoader.loadAsync('/XicunWebsite/atlas.png')
 
     obj.traverse(c => {
       if (!c.isMesh) return
@@ -232,8 +228,14 @@ async function loadModel() {
         m.roughness = 0.65
         m.metalness = 0
         m.alphaTest = m.transparent ? 0 : 0.3
-        m.map = atlas
-        m.needsUpdate = true
+        if (m.map) {
+          m.map.image = loadedTex.image
+          m.map.generateMipmaps = true
+          m.map.minFilter = THREE.NearestMipmapNearestFilter
+          m.map.magFilter = THREE.NearestFilter
+          m.map.colorSpace = THREE.SRGBColorSpace
+          m.map.needsUpdate = true
+        }
       }
     })
 
