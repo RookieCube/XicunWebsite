@@ -224,6 +224,7 @@ async function loadModel() {
         m.metalness = 0
         m.alphaTest = m.transparent ? 0 : 0.3
         if (m.map) {
+          m.map.generateMipmaps = true
           m.map.minFilter = THREE.NearestMipmapNearestFilter
           m.map.magFilter = THREE.NearestFilter
           m.map.colorSpace = THREE.SRGBColorSpace
