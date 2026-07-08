@@ -7,7 +7,9 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { SSAOPass } from 'three/examples/jsm/postprocessing/SSAOPass.js'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
-import modelBuffer from './model-data.js'
+
+const MODEL_URL = 'https://cdn.jsdelivr.net/gh/RookieCube/XicunWebsite@main/models/town_hall/town_hall_draco.glb'
+const DECODER_URL = 'https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/libs/draco/'
 
 // MakeUp UltraFast "Shoka" day colors ─ extracted from color_utils.glsl
 // ZENITH_DAY_COLOR: vec3(0.10, 0.40, 0.95)  → 0x1a66f2  deep vibrant blue
@@ -204,14 +206,12 @@ function setupMouse() {
 async function loadModel() {
   try {
     const dracoLoader = new DRACOLoader()
-    dracoLoader.setDecoderPath('/XicunWebsite/draco/')
+    dracoLoader.setDecoderPath(DECODER_URL)
     dracoLoader.setDecoderConfig({ type: 'js' })
 
     const gltfLoader = new GLTFLoader()
     gltfLoader.setDRACOLoader(dracoLoader)
-    const gltf = await new Promise((rs, rj) =>
-      gltfLoader.parse(modelBuffer, '', rs, rj)
-    )
+    const gltf = await gltfLoader.loadAsync(MODEL_URL)
 
     const obj = gltf.scene
     obj.traverse(c => {
