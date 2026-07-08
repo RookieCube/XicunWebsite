@@ -1,0 +1,36 @@
+---
+import "../styles/global.css"
+const { title } = Astro.props
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>{title || "西村镇 · West Village"}</title>
+  <meta name="description" content="西村镇 — 牛腩小镇 NewNanCity 下属城镇。交通通达 · 主城稳固 · 新城待兴 · 二星小镇" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23d4a850'/><text x='50' y='68' text-anchor='middle' font-size='48' font-family='serif' font-weight='bold' fill='%230b0b12'>西</text></svg>" />
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <!-- Loading indicator -->
+  <div id="loader" style="position:fixed;inset:0;z-index:10000;background:#0b0b12;display:flex;align-items:center;justify-content:center;transition:opacity 0.6s ease;pointer-events:none;">
+    <div style="text-align:center;">
+      <div style="font-family:'Noto Serif SC',serif;font-size:2rem;font-weight:600;color:#d4a850;letter-spacing:0.15em;margin-bottom:1.5rem;">西村镇</div>
+      <div id="loader-bar" style="width:120px;height:1px;background:rgba(212,168,80,0.15);margin:0 auto;border-radius:1px;overflow:hidden;">
+        <div id="loader-fill" style="height:100%;width:0%;background:#d4a850;transition:width 0.3s ease;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position:fixed;bottom:0;left:0;right:0;height:100vh;background:linear-gradient(to top, rgba(3,3,10,0.88) 0%, rgba(3,3,10,0.65) 25%, rgba(3,3,10,0.4) 50%, rgba(3,3,10,0.18) 70%, transparent 100%);pointer-events:none;z-index:1;"></div>
+  <div id="scroll-progress" style="position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:100;transition:width 0.1s linear;"></div>
+  <div class="lenis-content">
+    <slot />
+  </div>
+</body>
+</html>

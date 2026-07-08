@@ -1,0 +1,46 @@
+export default {
+  title: "西村镇 · West Village",
+  subtitle: "交通通达 · 主城稳固 · 新城待兴",
+  description: "西村的地理位置极其优越，交通网络四通八达，天然就适合进行较高密度的城镇开发。目前西村的主城区建设已经趋于稳固，虽然近期整体的发展速度略显低迷，活跃人数也少了点，但这片土地所蕴含的潜力依然不容小觑。",
+  rating: "⭐⭐ 二星小镇",
+  mayor: "Starteamwuzhou",
+  established: "2021.11.27",
+  evaluation_date: "2026.3",
+  districts: [
+    { name: "长夜区", desc: "西村最西端，chang_ye 始建之地" },
+    { name: "圣诞区", desc: "feng 建造的圣诞主题区域" },
+    { name: "西村峰区", desc: "高 y 轴岩壁，眺望西村" },
+    { name: "风月区", desc: "三界湖 · 明月阁 · 红石音乐" },
+    { name: "村民居住区", desc: "早期村民居住的地下基地" },
+    { name: "西村中区", desc: "市政厅 · 商市 · 核心地带" },
+    { name: "大梦区", desc: "大梦树屋 · В.С.С.Р. 纪念石雕" },
+    { name: "西村东区", desc: "现代木式居民楼群" },
+  ],
+  timeline: [
+    { date: "2020.3.2", event: "首设地铁站，牛腩第一批地铁站之一" },
+    { date: "2020.12.13", event: "西村大屠杀，Acam 时期浩劫" },
+    { date: "2021.11.27", event: "Starteamwuzhou 定居，重建西村" },
+    { date: "2021.12.5", event: "feng 加入，西村聚落正式形成" },
+    { date: "2022.1", event: "村民交易所 · 红石音乐《明月几时有》" },
+    { date: "2022.12", event: "圣诞区完工 · 红石音乐《铃儿响叮当》" },
+    { date: "2023.5.21", event: "三线换乘站（1·8·9号线）· 八区规划" },
+    { date: "2026.3", event: "聚焦西村新城，未来可期" },
+  ],
+  newcity: {
+    title: "西村新城 — 未来的希望",
+    description: "目前尚处建设起步阶段，但无疑是西村未来的希望所在。我们非常建议利用好新城的广阔空间，去尝试和发展更加美观、更具设计感的建筑风格。",
+    pillars: [
+      "高密度建设",
+      "美观设计风格",
+      "交通优势",
+      "大型城镇目标",
+    ]
+  },
+  people: [
+    { name: "Starteamwuzhou", role: "镇长 · 奠基者", desc: "西村最早的玩家，建设中区、东区、大梦区和新区" },
+    { name: "feng", role: "建筑大师", desc: "明月阁 · 圣诞区 · 红石音乐，建筑水平最高" },
+    { name: "wmzn", role: "建设者", desc: "Starteamwuzhou 的弟弟，建设中区和东区" },
+    { name: "water_soul", role: "新区居民", desc: "首个在西村新区定居的玩家，大修建筑" },
+    { name: "zique233525", role: "冰道大师", desc: "擅长修建冰道，贯通世界多个地方" },
+  ],
+}
