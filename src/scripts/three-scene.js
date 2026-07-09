@@ -24,6 +24,7 @@ const INIT_LOOK = new THREE.Vector3(-24.15, -4.50, -13.89)
 
 let scene, camera, renderer, modelGroup, skyDome, composer, bloomPass, ssaoPass, lottesPass
 let particles = null, particleVelocities = []
+let mouseLight = null
 let scrollY = 0, prevMouseX = 0, camAngle = 0
 let mouseX = 0, mouseY = 0
 let entranceT = 0, entranceActive = true, modelReady = false, loaderDone = false
@@ -124,6 +125,11 @@ export function init() {
   const fill2 = new THREE.DirectionalLight(0x665544, 0.15)
   fill2.position.set(0, -5, 0)
   scene.add(fill2)
+
+  // Mouse-following golden point light
+  mouseLight = new THREE.PointLight(0xd4a850, 1.2, 40)
+  mouseLight.position.set(0, 10, 0)
+  scene.add(mouseLight)
 
   loadModel()
 
@@ -444,6 +450,17 @@ function animate() {
   const px = mouseX * 0.8
   const py = -mouseY * 0.5
   const lookTarget = INIT_LOOK.clone().add(new THREE.Vector3(px, py, 0))
+
+  // Mouse-following golden light: project mouse onto ground plane
+  if (mouseLight) {
+    const v = new THREE.Vector3(mouseX, mouseY, 0.5).unproject(camera)
+    const dir = v.sub(camera.position).normalize()
+    const tPlane = (5 - camera.position.y) / dir.y
+    if (tPlane > 0) {
+      const lp = camera.position.clone().add(dir.multiplyScalar(tPlane))
+      mouseLight.position.lerp(lp, 0.06)
+    }
+  }
 
   camera.position.lerp(c.clone().addScaledVector(dr, -bDist * 0.5 * (1 + scrollY * 0.5)), 0.04)
   camera.lookAt(lookTarget)
