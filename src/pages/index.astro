@@ -5,7 +5,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 
   <!-- Nav -->
   <header style="position:fixed;top:0;left:0;right:0;z-index:10;padding:clamp(1rem,3vw,1.5rem) clamp(1.5rem,5vw,4rem);display:flex;justify-content:space-between;align-items:center;pointer-events:none;background:rgba(11,11,18,0.6);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);">
-    <span style="font-family:'Noto Serif SC',serif;font-size:0.95rem;font-weight:600;color:var(--gold);letter-spacing:0.12em;pointer-events:auto;">西村镇</span>
+    <span style="font-family:'Noto Serif SC',serif;font-size:0.95rem;font-weight:600;color:var(--gold);letter-spacing:0.12em;pointer-events:auto;display:inline-flex;align-items:center;gap:0.5rem;cursor:default;" onmouseenter="this.querySelector('img').style.opacity='1'" onmouseleave="this.querySelector('img').style.opacity='0'">西村镇<img src="/XicunWebsite/西村旗帜1.png" style="height:1.3em;opacity:0;transition:opacity 0.3s;" /></span>
     <nav style="display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.08em;pointer-events:auto;">
       <a href="#about" onclick="event.preventDefault();document.querySelector('#about').scrollIntoView({behavior:'smooth'})" style="color:var(--text);text-decoration:none;transition:color 0.2s;">关于</a>
       <a href="#districts" onclick="event.preventDefault();document.querySelector('#districts').scrollIntoView({behavior:'smooth'})" style="color:var(--text);text-decoration:none;transition:color 0.2s;">八区</a>
