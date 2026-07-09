@@ -8,7 +8,7 @@ import { SSAOPass } from 'three/examples/jsm/postprocessing/SSAOPass.js'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
 
-const MODEL_BASE = 'https://cdn.jsdelivr.net/gh/RookieCube/XicunWebsite@main/models/town_hall/'
+const MODEL_BASE = '/XicunWebsite/models/town_hall/'
 
 // MakeUp UltraFast "Shoka" day colors ─ extracted from color_utils.glsl
 // ZENITH_DAY_COLOR: vec3(0.10, 0.40, 0.95)  → 0x1a66f2  deep vibrant blue
@@ -239,7 +239,7 @@ async function loadModel() {
         const tr = name.includes('water') || name.includes('glass') || name.includes('pane') || name.includes('ice')
         const sm = new THREE.MeshStandardMaterial({
           map: atlas,
-          color: m.color ? m.color.clone() : 0xffffff,
+          color: 0xffffff,
           roughness: 0.65,
           metalness: 0,
           alphaTest: tr ? 0 : 0.3,
