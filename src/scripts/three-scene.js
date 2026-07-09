@@ -27,6 +27,7 @@ let particles = null, particleVelocities = []
 let mouseLight = null
 let scrollY = 0, prevMouseX = 0, camAngle = 0
 let mouseX = 0, mouseY = 0
+let smoothMouseX = 0, smoothMouseY = 0
 let entranceT = 0, entranceActive = true, modelReady = false, loaderDone = false
 let entranceCurve = null
 let letterTop = null, letterBot = null
@@ -440,6 +441,10 @@ function animate() {
 
   if (!modelGroup) { composer.render(); return }
 
+  // Smooth mouse for parallax and light — lerp to match cursor glow feel
+  smoothMouseX += (mouseX - smoothMouseX) * 0.08
+  smoothMouseY += (mouseY - smoothMouseY) * 0.08
+
   const a = camAngle + scrollY * 0.2, d = 1.0 - scrollY * 0.15
   const c = new THREE.Vector3().addVectors(INIT_POS, INIT_LOOK).multiplyScalar(0.5)
   const bd = INIT_LOOK.clone().sub(INIT_POS).normalize()
@@ -448,13 +453,13 @@ function animate() {
   const dr = new THREE.Vector3(rx, bd.y * d, rz).normalize()
   const bDist = INIT_POS.distanceTo(INIT_LOOK)
   // Parallax: subtle camera offset based on mouse
-  const px = mouseX * 0.8
-  const py = -mouseY * 0.5
+  const px = smoothMouseX * 0.8
+  const py = -smoothMouseY * 0.5
   const lookTarget = INIT_LOOK.clone().add(new THREE.Vector3(px, py, 0))
 
   // Mouse-following golden light: project mouse onto ground plane
   if (mouseLight) {
-    const v = new THREE.Vector3(mouseX, -mouseY, 1).unproject(camera)
+    const v = new THREE.Vector3(smoothMouseX, -smoothMouseY, 1).unproject(camera)
     const dir = v.sub(camera.position).normalize()
     const tPlane = dir.y !== 0 ? (5 - camera.position.y) / dir.y : 0
     if (tPlane > 0) {
