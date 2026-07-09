@@ -1,6 +1,6 @@
 import * as THREE from 'three'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js'
@@ -204,10 +204,15 @@ function setupMouse() {
 
 async function loadModel() {
   try {
-    const mtlLoader = new MTLLoader()
-    const mtl = await mtlLoader.loadAsync(MODEL_BASE + 'town_hall.mtl')
+    // Draco decoder
+    const dracoLoader = new DRACOLoader()
+    dracoLoader.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/libs/draco/')
+    dracoLoader.setDecoderConfig({ type: 'js' })
 
-    // Load atlas texture separately so we can patch MTL materials
+    const gltfLoader = new GLTFLoader()
+    gltfLoader.setDRACOLoader(dracoLoader)
+
+    // Load atlas texture
     const texLoader = new THREE.TextureLoader()
     const atlas = await texLoader.loadAsync('/XicunWebsite/atlas.png')
     atlas.generateMipmaps = true
@@ -215,18 +220,11 @@ async function loadModel() {
     atlas.magFilter = THREE.NearestFilter
     atlas.colorSpace = THREE.SRGBColorSpace
 
-    // Patch all MTL materials to use our atlas and correct colorSpace
-    for (const name in mtl.materials) {
-      const m = mtl.materials[name]
-      if (m.map) {
-        m.map = atlas
-      }
-      m.colorSpace = THREE.SRGBColorSpace
-    }
-
-    const objLoader = new OBJLoader()
-    objLoader.setMaterials(mtl)
-    const obj = await objLoader.loadAsync(MODEL_BASE + 'town_hall.obj')
+    // Load model (vertex colors baked from MTL Kd)
+    const [gltf] = await Promise.all([
+      gltfLoader.loadAsync(MODEL_BASE + 'town_hall_draco.glb')
+    ])
+    const obj = gltf.scene
 
     obj.traverse(c => {
       if (!c.isMesh) return
@@ -239,7 +237,8 @@ async function loadModel() {
         const tr = name.includes('water') || name.includes('glass') || name.includes('pane') || name.includes('ice')
         const sm = new THREE.MeshStandardMaterial({
           map: atlas,
-          color: m.color ? m.color.clone() : 0xffffff,
+          color: 0xffffff,
+          vertexColors: true,
           roughness: 0.65,
           metalness: 0,
           alphaTest: tr ? 0 : 0.3,
