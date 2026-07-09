@@ -70,7 +70,7 @@ export function init() {
     new THREE.Vector2(window.innerWidth, window.innerHeight),
     0.7,  // strength
     0.5,  // radius
-    0.3   // threshold — catch particles for glowing light effect
+    0.4   // threshold
   )
   bloomPass.renderToScreen = false
   composer.addPass(bloomPass)
