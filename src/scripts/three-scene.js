@@ -455,7 +455,7 @@ function animate() {
   if (mouseLight) {
     const v = new THREE.Vector3(mouseX, -mouseY, 1).unproject(camera)
     const dir = v.sub(camera.position).normalize()
-    const tPlane = (5 - camera.position.y) / dir.y
+    const tPlane = dir.y !== 0 ? (5 - camera.position.y) / dir.y : 0
     if (tPlane > 0) {
       const lp = camera.position.clone().add(dir.multiplyScalar(tPlane))
       mouseLight.position.lerp(lp, 0.06)
