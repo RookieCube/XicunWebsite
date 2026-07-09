@@ -32,20 +32,11 @@ function buildArrays(path, nameToIdx, mats) {
   const pos = [], uv = [], nrm = [], col = []
   let curIdx = 0
 
-  // Add half-texel UV inset to prevent atlas bleeding
-  // Atlas = 2048×2048, each cell = 16×16, half-texel = 0.5/2048 = 0.000244
-  const UV_INSET = 0.000244
-
   function pushTri(a, b, c, kd) {
     for (const idx of [a, b, c]) {
       const p = v[idx.v - 1]; pos.push(p[0], p[1], p[2])
-      if (idx.vt) {
-        const t = vt[idx.vt - 1]
-        uv.push(
-          Math.min(1 - UV_INSET, Math.max(UV_INSET, t[0])),
-          Math.min(1 - UV_INSET, Math.max(UV_INSET, t[1]))
-        )
-      } else uv.push(0, 0)
+      if (idx.vt) { const t = vt[idx.vt - 1]; uv.push(t[0], t[1]) }
+      else uv.push(0, 0)
       if (idx.vn) { const no = vn[idx.vn - 1]; nrm.push(no[0], no[1], no[2]) }
       else nrm.push(0, 1, 0)
       col.push(kd[0], kd[1], kd[2])
