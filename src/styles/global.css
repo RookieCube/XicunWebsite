@@ -103,12 +103,14 @@ h1,h2,h3 { font-family: 'Noto Serif SC', serif; font-weight: 600; line-height: 1
   border-radius: 12px;
 }
 .card {
-  background: var(--card-bg);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: none;
   padding: 1.8rem;
   transition: background 0.3s;
 }
-.card:hover { background: rgba(255,255,255,0.06); }
+.card:hover { background: rgba(255,255,255,0.07); }
 .card-num { font-size: 0.6rem; color: var(--gold-dim); letter-spacing: 0.2em; margin-bottom: 0.4rem; }
 .card-title { font-family: 'Noto Serif SC', serif; font-size: 1.05rem; font-weight: 600; margin-bottom: 0.3rem; }
 .card-desc { font-size: 0.8rem; color: var(--dim); line-height: 1.6; }
