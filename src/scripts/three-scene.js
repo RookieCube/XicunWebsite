@@ -23,6 +23,7 @@ const INIT_POS = new THREE.Vector3(-21.58, -6.14, -23.41)
 const INIT_LOOK = new THREE.Vector3(-24.15, -4.50, -13.89)
 
 let scene, camera, renderer, modelGroup, skyDome, composer, bloomPass, ssaoPass, lottesPass
+let particles = null, particleVelocities = []
 let scrollY = 0, prevMouseX = 0, camAngle = 0
 let mouseX = 0, mouseY = 0
 let entranceT = 0, entranceActive = true, modelReady = false, loaderDone = false
@@ -272,6 +273,7 @@ async function loadModel() {
     const box = new THREE.Box3().setFromObject(modelGroup)
     modelGroup.position.sub(box.getCenter(new THREE.Vector3()))
     scene.add(modelGroup)
+    createParticles(box)
     modelReady = true
     buildEntrancePath()
 
@@ -288,7 +290,81 @@ async function loadModel() {
   } catch (e) { console.error(e) }
 }
 
-// Dramatic 3D camera fly-in path (Catmull-Rom spline)
+// Lusion-style drifting particles
+function createParticles(box) {
+  const size = box.getSize(new THREE.Vector3())
+  const center = box.getCenter(new THREE.Vector3())
+  const count = 400
+  const positions = new Float32Array(count * 3)
+  const sizes = new Float32Array(count)
+  particleVelocities = []
+
+  for (let i = 0; i < count; i++) {
+    positions[i * 3] = center.x + (Math.random() - 0.5) * size.x * 1.5
+    positions[i * 3 + 1] = center.y + Math.random() * size.y * 1.2 - size.y * 0.2
+    positions[i * 3 + 2] = center.z + (Math.random() - 0.5) * size.z * 1.5
+    sizes[i] = 0.03 + Math.random() * 0.06
+    particleVelocities.push({
+      x: (Math.random() - 0.5) * 0.004,
+      y: 0.005 + Math.random() * 0.01,
+      z: (Math.random() - 0.5) * 0.004,
+      phase: Math.random() * Math.PI * 2,
+    })
+  }
+
+  const geo = new THREE.BufferGeometry()
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
+  geo.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1))
+
+  // Canvas sprite: soft glowing circle
+  const canvas = document.createElement('canvas')
+  canvas.width = 32; canvas.height = 32
+  const ctx = canvas.getContext('2d')
+  const gradient = ctx.createRadialGradient(16, 16, 0, 16, 16, 16)
+  gradient.addColorStop(0, 'rgba(255,235,200,1)')
+  gradient.addColorStop(0.3, 'rgba(212,168,80,0.6)')
+  gradient.addColorStop(1, 'rgba(212,168,80,0)')
+  ctx.fillStyle = gradient
+  ctx.fillRect(0, 0, 32, 32)
+  const texture = new THREE.CanvasTexture(canvas)
+
+  const mat = new THREE.PointsMaterial({
+    size: 0.35,
+    map: texture,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
+    opacity: 0.6,
+    color: 0xd4a850,
+  })
+
+  particles = new THREE.Points(geo, mat)
+  scene.add(particles)
+}
+
+function updateParticles() {
+  if (!particles) return
+  const pos = particles.geometry.attributes.position.array
+  const box = new THREE.Box3().setFromObject(modelGroup)
+  const size = box.getSize(new THREE.Vector3())
+  const center = box.getCenter(new THREE.Vector3())
+  const t = Date.now() * 0.001
+
+  for (let i = 0; i < pos.length / 3; i++) {
+    const v = particleVelocities[i]
+    pos[i * 3] += v.x + Math.sin(t * 0.3 + v.phase) * 0.002
+    pos[i * 3 + 1] += v.y
+    pos[i * 3 + 2] += v.z + Math.cos(t * 0.2 + v.phase) * 0.002
+
+    // Reset if out of bounds
+    if (pos[i * 3 + 1] > center.y + size.y * 0.7) {
+      pos[i * 3] = center.x + (Math.random() - 0.5) * size.x * 1.5
+      pos[i * 3 + 1] = center.y - size.y * 0.3
+      pos[i * 3 + 2] = center.z + (Math.random() - 0.5) * size.z * 1.5
+    }
+  }
+  particles.geometry.attributes.position.needsUpdate = true
+}
 function buildEntrancePath() {
   const center = INIT_LOOK.clone()
   // Control points: start high → sweep around → land at final position
@@ -337,6 +413,7 @@ function animate() {
     letterTop.style.height = barH + 'vh'
     letterBot.style.height = barH + 'vh'
 
+    updateParticles()
     composer.render()
 
     if (t >= 1) {
@@ -370,5 +447,6 @@ function animate() {
 
   camera.position.lerp(c.clone().addScaledVector(dr, -bDist * 0.5 * (1 + scrollY * 0.5)), 0.04)
   camera.lookAt(lookTarget)
+  updateParticles()
   composer.render()
 }
