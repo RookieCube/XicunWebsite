@@ -8,7 +8,7 @@ import { SSAOPass } from 'three/examples/jsm/postprocessing/SSAOPass.js'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
 
-const MODEL_BASE = 'https://rookiecube.github.io/XicunWebsite/models/town_hall/'
+const MODEL_BASE = 'https://cdn.jsdmirror.com/gh/RookieCube/XicunWebsite@main/models/town_hall/'
 
 // MakeUp UltraFast "Shoka" day colors ─ extracted from color_utils.glsl
 // ZENITH_DAY_COLOR: vec3(0.10, 0.40, 0.95)  → 0x1a66f2  deep vibrant blue
@@ -209,7 +209,7 @@ async function loadModel() {
 
     // Load atlas texture separately so we can patch MTL materials
     const texLoader = new THREE.TextureLoader()
-    const atlas = await texLoader.loadAsync('https://rookiecube.github.io/XicunWebsite/models/town_hall/atlas.png')
+    const atlas = await texLoader.loadAsync(MODEL_BASE + 'atlas.png')
     atlas.generateMipmaps = true
     atlas.minFilter = THREE.NearestMipmapNearestFilter
     atlas.magFilter = THREE.NearestFilter
