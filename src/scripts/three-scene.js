@@ -215,8 +215,8 @@ async function loadModel() {
     // Load atlas texture
     const texLoader = new THREE.TextureLoader()
     const atlas = await texLoader.loadAsync('/XicunWebsite/atlas.png')
-    atlas.generateMipmaps = true
-    atlas.minFilter = THREE.NearestMipmapNearestFilter
+    atlas.generateMipmaps = false
+    atlas.minFilter = THREE.NearestFilter
     atlas.magFilter = THREE.NearestFilter
     atlas.colorSpace = THREE.SRGBColorSpace
 
