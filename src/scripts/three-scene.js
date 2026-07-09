@@ -8,7 +8,7 @@ import { SSAOPass } from 'three/examples/jsm/postprocessing/SSAOPass.js'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
 
-const MODEL_BASE = 'https://cdn.jsdmirror.com/gh/RookieCube/XicunWebsite@main/models/town_hall/'
+const MODEL_BASE = 'https://rookiecube.github.io/XicunWebsite/models/town_hall/'
 
 // MakeUp UltraFast "Shoka" day colors ─ extracted from color_utils.glsl
 // ZENITH_DAY_COLOR: vec3(0.10, 0.40, 0.95)  → 0x1a66f2  deep vibrant blue
@@ -209,7 +209,7 @@ async function loadModel() {
 
     // Load atlas texture separately so we can patch MTL materials
     const texLoader = new THREE.TextureLoader()
-    const atlas = await texLoader.loadAsync('https://cdn.jsdmirror.com/gh/RookieCube/XicunWebsite@main/models/town_hall/atlas.png')
+    const atlas = await texLoader.loadAsync('https://rookiecube.github.io/XicunWebsite/models/town_hall/atlas.png')
     atlas.generateMipmaps = true
     atlas.minFilter = THREE.NearestMipmapNearestFilter
     atlas.magFilter = THREE.NearestFilter
@@ -224,9 +224,25 @@ async function loadModel() {
       m.colorSpace = THREE.SRGBColorSpace
     }
 
+    // Load gzip-compressed OBJ and decompress in browser
+    const resp = await fetch(MODEL_BASE + 'town_hall.obj.gz')
+    if (!resp.ok) throw new Error('OBJ fetch failed: ' + resp.status)
+    const compressed = await resp.arrayBuffer()
+    let text
+    if (typeof DecompressionStream !== 'undefined') {
+      const ds = new DecompressionStream('gzip')
+      const stream = new Blob([compressed]).stream().pipeThrough(ds)
+      text = await new Response(stream).text()
+    } else {
+      // Fallback: use global pako if available
+      const pako = window.pako
+      if (!pako) throw new Error('No gzip decompression available')
+      text = pako.ungzip(new Uint8Array(compressed), { to: 'string' })
+    }
+
     const objLoader = new OBJLoader()
     objLoader.setMaterials(mtl)
-    const obj = await objLoader.loadAsync(MODEL_BASE + 'town_hall.obj')
+    const obj = objLoader.parse(text)
 
     obj.traverse(c => {
       if (!c.isMesh) return
