@@ -33,7 +33,23 @@ const { title } = Astro.props
   </div>
 
   <div style="position:fixed;bottom:0;left:0;right:0;height:100vh;background:linear-gradient(to top, rgba(3,3,10,0.88) 0%, rgba(3,3,10,0.65) 25%, rgba(3,3,10,0.4) 50%, rgba(3,3,10,0.18) 70%, transparent 100%);pointer-events:none;z-index:1;"></div>
+  <div id="cursor-glow" style="position:fixed;pointer-events:none;z-index:9999;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at center,rgba(212,168,80,0.08) 0%,rgba(212,168,80,0.03) 40%,transparent 70%);transform:translate(-50%,-50%);transition:opacity 0.6s ease;opacity:0;"></div>
   <div id="scroll-progress" style="position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:100;transition:width 0.1s linear;"></div>
+  <script>
+    const c = document.getElementById('cursor-glow')
+    if (c) {
+      let mx = 0, my = 0, cx = 0, cy = 0
+      document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; c.style.opacity = '1' })
+      document.addEventListener('mouseleave', () => { c.style.opacity = '0' })
+      function tick() {
+        cx += (mx - cx) * 0.08
+        cy += (my - cy) * 0.08
+        c.style.transform = `translate(${cx - 60}px,${cy - 60}px)`
+        requestAnimationFrame(tick)
+      }
+      tick()
+    }
+  </script>
   <div class="lenis-content">
     <slot />
   </div>
