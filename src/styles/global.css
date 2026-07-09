@@ -99,6 +99,8 @@ h1,h2,h3 { font-family: 'Noto Serif SC', serif; font-weight: 600; line-height: 1
   gap: 1px;
   background: var(--card-border);
   border: 1px solid var(--card-border);
+  overflow: hidden;
+  border-radius: 12px;
 }
 .card {
   background: var(--card-bg);
