@@ -124,6 +124,9 @@ h1,h2,h3 { font-family: 'Noto Serif SC', serif; font-weight: 600; line-height: 1
 .timeline-date { font-size: 0.65rem; letter-spacing: 0.18em; color: var(--gold-dim); margin-bottom: 0.15rem; }
 .timeline-event { font-size: 1rem; color: var(--text); }
 
+/* Nav */
+header nav a:hover { color: var(--gold) !important; }
+
 /* Buttons */
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
