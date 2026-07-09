@@ -453,7 +453,7 @@ function animate() {
   const dr = new THREE.Vector3(rx, bd.y * d, rz).normalize()
   const bDist = INIT_POS.distanceTo(INIT_LOOK)
   // Parallax: subtle camera offset based on mouse
-  const px = smoothMouseX * 0.8
+  const px = -smoothMouseX * 0.8
   const py = -smoothMouseY * 0.5
   const lookTarget = INIT_LOOK.clone().add(new THREE.Vector3(px, py, 0))
 
