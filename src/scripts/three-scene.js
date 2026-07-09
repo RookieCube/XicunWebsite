@@ -71,7 +71,7 @@ export function init() {
     new THREE.Vector2(window.innerWidth, window.innerHeight),
     0.7,  // strength
     0.5,  // radius
-    0.4   // threshold
+    0.5   // threshold
   )
   bloomPass.renderToScreen = false
   composer.addPass(bloomPass)
