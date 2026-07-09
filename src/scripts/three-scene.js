@@ -453,7 +453,7 @@ function animate() {
 
   // Mouse-following golden light: project mouse onto ground plane
   if (mouseLight) {
-    const v = new THREE.Vector3(mouseX, mouseY, 0.5).unproject(camera)
+    const v = new THREE.Vector3(mouseX, -mouseY, 1).unproject(camera)
     const dir = v.sub(camera.position).normalize()
     const tPlane = (5 - camera.position.y) / dir.y
     if (tPlane > 0) {
