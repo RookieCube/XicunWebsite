@@ -68,9 +68,9 @@ export function init() {
 
   bloomPass = new UnrealBloomPass(
     new THREE.Vector2(window.innerWidth, window.innerHeight),
-    0.4,  // strength
+    0.7,  // strength
     0.5,  // radius
-    0.9   // threshold — only truly bright faces
+    0.3   // threshold — catch particles for glowing light effect
   )
   bloomPass.renderToScreen = false
   composer.addPass(bloomPass)
@@ -322,26 +322,27 @@ function createParticles(box) {
   geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3))
   geo.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1))
 
-  // Canvas sprite: soft glowing circle
+  // Canvas sprite: bright glowing circle for bloom
   const canvas = document.createElement('canvas')
-  canvas.width = 32; canvas.height = 32
+  canvas.width = 64; canvas.height = 64
   const ctx = canvas.getContext('2d')
-  const gradient = ctx.createRadialGradient(16, 16, 0, 16, 16, 16)
-  gradient.addColorStop(0, 'rgba(255,235,200,1)')
-  gradient.addColorStop(0.3, 'rgba(212,168,80,0.6)')
+  const gradient = ctx.createRadialGradient(32, 32, 0, 32, 32, 32)
+  gradient.addColorStop(0, 'rgba(255,255,240,1)')
+  gradient.addColorStop(0.15, 'rgba(255,235,200,0.9)')
+  gradient.addColorStop(0.4, 'rgba(212,168,80,0.5)')
   gradient.addColorStop(1, 'rgba(212,168,80,0)')
   ctx.fillStyle = gradient
-  ctx.fillRect(0, 0, 32, 32)
+  ctx.fillRect(0, 0, 64, 64)
   const texture = new THREE.CanvasTexture(canvas)
 
   const mat = new THREE.PointsMaterial({
-    size: 0.35,
+    size: 0.8,
     map: texture,
     transparent: true,
     blending: THREE.AdditiveBlending,
     depthWrite: false,
-    opacity: 0.6,
-    color: 0xd4a850,
+    opacity: 1,
+    color: 0xffe8b0,
   })
 
   particles = new THREE.Points(geo, mat)
